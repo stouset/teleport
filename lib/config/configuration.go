@@ -1616,9 +1616,7 @@ func Configure(clf *CommandLineFlags, cfg *service.Config) error {
 			StaticLabels:  staticLabels,
 			DynamicLabels: dynamicLabels,
 			TLS: service.DatabaseTLS{
-				CACert:     caBytes,
-				ServerName: "", // TODO(JN)
-				Mode:       "",
+				CACert: caBytes,
 			},
 			AWS: service.DatabaseAWS{
 				Region: clf.DatabaseAWSRegion,
